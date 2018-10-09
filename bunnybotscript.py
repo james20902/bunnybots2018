@@ -47,6 +47,6 @@ blueLower = np.array([110, 0, 0])
 while True:
     if getArea(redUpper, redLower) > getArea(blueUpper, blueLower):
         sock.sendto(("red"), (UDP_IP, UDP_PORT))
-    else if getArea(redUpper, redLower) < getArea(blueUpper, blueLower):
+    elif getArea(redUpper, redLower) < getArea(blueUpper, blueLower):
         sock.sendto(("blue"), (UDP_IP, UDP_PORT))
 
